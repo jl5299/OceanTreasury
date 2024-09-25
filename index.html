@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href="../../favicon.ico" rel="icon">
+    <link rel="shortcut icon" type="image/jpg" href="assets/OceanTreasuryLogo.jpg"/>
+
+    <title>Ocean Treasury</title><!-- Bootstrap core CSS -->
+    <link crossorigin="anonymous" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity=
+    "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    rel="stylesheet"><!-- FontAwesome Icon Font -->
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    rel="stylesheet"><!-- LinearIcons Icon Font -->
+    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel=
+    "stylesheet"><!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet"><!-- Timeline CSS -->
+    <link href="css/timeline.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER BAR -->
+    <div class="header">
+            <a href="/" class="logo">
+                <img src="assets/OceanTreasuryLogo.jpg">
+            </a>
+              <!-- ################################################################################################ -->
+    </div>
+    <!-- HEADER BAR -->
+
+    <!-- INTRO SECTION -->
+    <section class="section-intro">
+            <div class="intro">
+                    <div class="col-md-12">
+                        <br></br>
+                        <br></br>
+                        <h1>Ocean Treasury</h1>
+                        <h5>Revolutionizing Green Shipping</h5>
+                    </div>
+
+                    <div class = "bottom">
+                        <a href="#interest">
+                        <div class="arrow"></div>
+                        </a>
+                    </div>
+            </div>
+    
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class ="section-picture">
+      <div style="display:block; width: 100%;">
+          <div class = "column" style="padding-left:10px; padding-right:10px">
+                  <h2 style = "text-align: center;">Eco-friendly logistics</h2>
+                  <hr>
+                  <p class="lead">
+                    Our platform is transforming the maritime industry by certifying efficiency gains and enabling shipping companies to offer premium carbon-free shipment rates to their customers. We provide a solution that not only addresses the growing demand for sustainable shipping but also turns it into a profitable opportunity.
+                  </p>
+
+          </div>
+      </div>
+    </section>
+<!-- 
+    <section class ="section-picture">
+      <div style="display:block; width: 100%;">
+              <h2 style = "text-align: center;">Why partner with us?</h2>
+              <hr>
+
+              <p class = "lead">
+                Engaging with our platform means tapping into a rapidly growing market for sustainable shipping, positioning your company at the forefront of the green transition in maritime logistics. Our solution not only mitigates compliance costs but also opens new revenue streams through premium rates, meeting the rising consumer demand for eco-friendly logistics.
+              </p>
+
+          </div>
+      </div>  
+  </section> -->
+
+    <!-- FORM SECTION -->
+    <script>
+        window.addEventListener("load", function() {
+            var spinner = $('#loader');
+
+            const form = document.getElementById('my-form');
+            form.addEventListener("submit", function(e) {
+                e.preventDefault();
+                spinner.show();
+
+                const data = new FormData(form);
+                const action = e.target.action;
+                fetch(action, {
+                    method: 'POST',
+                    body: data,
+                })
+                .then(() => {
+                    spinner.hide();
+                    alert("We will be in touch shortly!");
+                    form.reset()
+                })
+
+            });
+        });
+    </script>
+
+    <style type="text/css">
+      #loader {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.75) url("assets/loading.gif") no-repeat center center;
+        z-index: 10000;
+      }
+      /* The switch - the box around the slider */
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+      
+      /* Hide default HTML checkbox */
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      
+      /* The slider */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      input:checked + .slider {
+        background-color: #2196F3;
+      }
+      
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+      }
+      
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+      
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+      
+      .slider.round:before {
+        border-radius: 50%;
+      }
+      
+      .button {
+        background-color: #ffffff;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+    </style>
+  
+    <section class ="section-picture" id = "interest">
+      <div style="display:block; width: 100%;">
+          <h2>Early access</h2>
+          <h5>Sign up for more information</h5>
+          <h4 id="demo"></h4>
+          <form
+            id="my-form"
+            method="POST" 
+            action="https://script.google.com/macros/s/AKfycbwZP3hwCfmK5D1GDGY9O7e_E7CDp35QgDiEVCIznIIF5MsjbFeSkoe9vgOrnaXXS-NKNw/exec"
+                              style = "width: max(50%, min(500px, 75%)); text-align: center; margin: 0 auto"
+          >
+              <input name="Name" type="text" placeholder="Name" required>
+              <input name="Email" type="email" placeholder="Email" color = "#9bddff" required>
+           <h6>Share contact with other attendees?</h6>
+          <label class = "switch"> <input name="SHARE PARTICIPATION WITH OTHER ORGANIZATIONS?" type="checkbox"i checked><span class = "slider round"></span></label>
+      </div>
+              <button class = "button" type="submit">Submit</button>
+          </form>
+  </section>
+
+  <div id="loader"></div>
+    <!-- FORM SECTION -->
+
+
+    <!-- FOOTER SECTION -->
+   <section class="outro">
+                <div class="col-md-8 col-md-offset-2">
+                        <div class="social">
+                            <a href= "mailto:justin@oceantreasury.com">
+                            <i class="fa fa-envelope fa-2x"></i></a>
+                    </div> <!-- /social footer -->
+                </div> <!-- /col-md-4 -->
+    </section>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script> 
+    <script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script> 
+    <script src="js/bootstrap.min.js">
+    </script> 
+    <script src="js/scripts.js">
+    </script>
+</body>
+</html>
