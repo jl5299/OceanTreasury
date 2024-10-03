@@ -180,7 +180,6 @@ main {
   color: #333;
 }
 
-/* FAQ Section Styles */
 #faq {
   background-color: #003366;
   color: white;
@@ -208,7 +207,7 @@ main {
 
 #faq h2 {
   margin-bottom: 30px;
-  font-size: 40px;
+  font-size: 36px; /* Slightly reduced from 40px */
   font-weight: 600;
 }
 
@@ -217,7 +216,7 @@ main {
 }
 
 .faq-question {
-  font-size: 30px;
+  font-size: 26px; /* Reduced from 30px */
   font-weight: 500;
   cursor: pointer;
   padding: 15px;
@@ -244,7 +243,7 @@ main {
 .faq-answer {
   display: none;
   padding: 15px;
-  font-size: 24px;
+  font-size: 20px; /* Reduced from 24px */
   background-color: #004d99;
   border-radius: 0 0 5px 5px;
 }
@@ -519,5 +518,17 @@ footer img {
 
   footer img {
     margin-bottom: 15px;
+  }
+
+  #faq h2 {
+    font-size: 32px; /* Further reduced for mobile */
+  }
+
+  .faq-question {
+    font-size: 22px; /* Further reduced for mobile */
+  }
+
+  .faq-answer {
+    font-size: 18px; /* Further reduced for mobile */
   }
 }
