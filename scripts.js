@@ -68,3 +68,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const burgerMenu = document.getElementById('burger-menu');
+    const mainNav = document.getElementById('main-nav');
+
+    burgerMenu.addEventListener('click', () => {
+        mainNav.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mainNav.classList.remove('active');
+        });
+    });
+});

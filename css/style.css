@@ -52,6 +52,13 @@ nav ul li a:hover, nav ul li a.cta {
   color: white;
 }
 
+/* Burger Menu Styles */
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+
 /* Main Content Styles */
 main {
   max-width: 1200px;
@@ -87,15 +94,15 @@ main {
 }
 
 .placeholder-image {
-  max-width: 80%; /* Make the image container smaller */
-  margin: 10px auto 0; /* Center the image and add space above */
+  max-width: 80%;
+  margin: 10px auto 0;
 }
 
 .placeholder-image img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
-  border-radius: 5px; /* Slight rounding of corners */
+  border-radius: 5px;
 }
 
 .hero-cta {
@@ -392,7 +399,57 @@ footer img {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .row, form {
+  body {
+    font-size: 18px;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  .logo img {
+    height: 30px; /* Smaller logo for mobile */
+  }
+
+  nav {
+    display: none; /* Hide the navigation menu by default on mobile */
+    width: 100%;
+    order: 3; /* Place the nav below the logo and burger menu */
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px 0;
+    font-size: 20px;
+  }
+
+  .burger-menu {
+    display: block;
+    order: 2; /* Place the burger menu next to the logo */
+  }
+
+  #hero h1 {
+    font-size: 48px;
+  }
+
+  #hero p {
+    font-size: 24px;
+  }
+
+  .row {
     flex-direction: column;
   }
 
@@ -400,5 +457,41 @@ footer img {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
+  }
+
+  .section-title h3 {
+    font-size: 32px;
+  }
+
+  .section-content h4 {
+    font-size: 28px;
+  }
+
+  .section-content p {
+    font-size: 20px;
+  }
+
+  #get-access h2 {
+    font-size: 36px;
+  }
+
+  #get-access p {
+    font-size: 24px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  .form-left, .form-right {
+    width: 100%;
+  }
+
+  .consent-text {
+    font-size: 24px;
+  }
+
+  button[type="submit"] {
+    font-size: 22px;
   }
 }
