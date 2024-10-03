@@ -396,11 +396,15 @@ footer img {
 .social a:hover {
   color: #004d99;
 }
-
-/* Responsive Styles */
 @media (max-width: 768px) {
   body {
     font-size: 18px;
+  }
+
+  header, main, .faq-content {
+    max-width: 100%; /* Ensure full width on mobile */
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   header {
@@ -449,6 +453,14 @@ footer img {
     font-size: 24px;
   }
 
+  .hero-image {
+    padding: 10px 0; /* Reduce side padding */
+  }
+
+  .placeholder-image {
+    max-width: 100%; /* Ensure full width on mobile */
+  }
+
   .row {
     flex-direction: column;
   }
@@ -469,6 +481,10 @@ footer img {
 
   .section-content p {
     font-size: 20px;
+  }
+
+  #get-access {
+    padding: 20px; /* Reduce padding for mobile */
   }
 
   #get-access h2 {
@@ -493,5 +509,15 @@ footer img {
 
   button[type="submit"] {
     font-size: 22px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer img {
+    margin-bottom: 15px;
   }
 }
