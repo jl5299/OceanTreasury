@@ -39,13 +39,25 @@
         height: auto;
     }
 
+    /*.what-we-do::before {
+        content: '';
+        position: absolute;
+        bottom: -40px;
+        left: 32px;
+        right: 32px;
+        height: 1px;
+        background-color: #000;
+    }*/
+    
     .what-we-do {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 0 32px;
+        padding: 40px 32px;
         box-sizing: border-box;
         position: relative;
+        border-top: none;
+        border-bottom: none;
     }
 
     .oceans-rough-box {
@@ -138,36 +150,28 @@
     }
 
     nav {
-        justify-content: center;
-        width: 100%;
-        padding: 16px 0;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 20px;
-    }
-
-    nav::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 1px;
-        background-color: black;
-        position: absolute;
-        bottom: 0;
+        display: none; 
     }
 
     .hero {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: -80px; 
     }
 
     .dashboard-preview {
         max-width: 100%;
         height: auto;
         margin: 0 auto;
+    }
+
+    .horizontal-line-top {
+        display: none; 
+    }
+
+    .bottom-line {
+        display: none;
     }
 
     .vertical-line,
