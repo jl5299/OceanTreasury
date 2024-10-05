@@ -2,7 +2,8 @@
 @media screen and (min-width: 1441px) {
     .hero,
     .dashboard-preview,
-    .what-we-do {
+    .what-we-do
+    .how-it-works {
         width: 1312px;
         margin-left: auto;
         margin-right: auto;
@@ -30,41 +31,56 @@
     }
 
     .hero,
-    .dashboard-preview,
-    .what-we-do {
-        width: 100%;
+    .dashboard-preview {
+        width: calc(100% - 64px);
+        max-width: 1312px;
+        margin-left: auto;
+        margin-right: auto; 
     }
 
     .dashboard-preview {
         height: auto;
     }
 
-    /*.what-we-do::before {
+    .what-we-do {
+        position: relative;
+        width: 100%;
+        max-width: 1312px;
+        margin: 0 auto;
+        padding: 40px 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    
+    .what-we-do-content {
+        position: relative;
+        z-index: 2;
+        padding: 0 64px;
+    }
+    
+    .what-we-do::before {
         content: '';
         position: absolute;
-        bottom: -40px;
-        left: 32px;
-        right: 32px;
-        height: 1px;
-        background-color: #000;
-    }*/
-    
-    .what-we-do {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 40px 32px;
-        box-sizing: border-box;
-        position: relative;
-        border-top: none;
-        border-bottom: none;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        background-image: url(../assets/roughocean.png);
+        background-size: cover;
+        background-position: center;
+        opacity: 1;
+        z-index: 1;
     }
+    
 
     .oceans-rough-box {
         max-width: 100%;
         margin: 40px 0;
         position: relative;
-        padding: 40px 0;
+        padding: 40px;
+        z-index: 2;
     }
 
     .horizontal-line-top,
@@ -104,7 +120,10 @@
     .how-it-works,
     .faq-section,
     .early-access-section {
-        width: 100%;
+        width: calc(100% - 64px);
+        max-width: 1312px;
+        margin-left: auto;
+        margin-right: auto; 
     }
 
     .how-it-works-content {
@@ -114,9 +133,28 @@
     .how-it-works-left,
     .how-it-works-right {
         width: 100%;
+        max-width: 1312px;
+        margin-left: auto;
+        margin-right: auto; 
     }
 
+    .how-it-works-right {
+        margin-top: 20px; 
+    }
+
+    .feature-list li:last-child {
+        border-bottom: 1px solid black;
+    }
+
+    .faq-section {
+        width: 100%; 
+    }
+    
     .faq-container {
+        width: calc(100% - 64px);
+        max-width: 1312px;
+        margin-left: auto; 
+        margin-right: auto; 
         flex-direction: column;
     }
 
@@ -126,14 +164,28 @@
     }
 
     .form-container {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
         padding-left: 0;
     }
 
-    .form-left,
+    .form-left {
+        width: calc(100% - 48px);
+        padding-left: 48px;
+        order: 1;
+    }
+
     .form-right {
         width: 100%;
+        order: 2;
     }
+
+    .submit-btn {
+        order: 3;
+        margin-top: 0;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -198,13 +250,40 @@
     }
 
     .what-we-do {
-        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 32px;
+        box-sizing: border-box;
+        position: relative;
+
+
+        height: auto; /* Remove fixed height */
+        min-height: 659px; /* Set minimum height to original height */
+    }
+
+    .what-we-do::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../assets/roughocean.png);
+        background-size: cover;
+        background-position: center;
+        opacity: 1;
+        z-index: 1;
     }
 
     .oceans-rough-box {
-        margin: 30px 0;
-        padding: 30px 0;
+        max-width: 100%;
+        margin: 40px 0;
+        position: relative;
+        padding: 40px;
+        z-index: 2;
     }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -264,6 +343,10 @@
         font-size: 24px;
     }
 
+    .early-access-section {
+        padding: 80px 16px 100px;
+    }
+
     .early-access-title {
         font-size: 60px;
     }
@@ -272,14 +355,53 @@
         font-size: 36px;
     }
 
+    .allow-share p {
+        font-size: 36px;
+    }
+
+    .allow-share .note {
+        font-size: 20px;
+    }
+
+    .submit-btn {
+        font-size: 24px;
+    }
+
     .what-we-do {
-        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 32px;
+        box-sizing: border-box;
+        position: relative;
+
+
+        height: auto; /* Remove fixed height */
+        min-height: 659px; /* Set minimum height to original height */
+    }
+
+    .what-we-do::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../assets/roughocean.png);
+        background-size: cover;
+        background-position: center;
+        opacity: 1;
+        z-index: 1;
     }
 
     .oceans-rough-box {
-        margin: 25px 0;
-        padding: 25px 0;
+        max-width: 100%;
+        margin: 40px 0;
+        position: relative;
+        padding: 40px;
+        z-index: 2;
     }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -328,21 +450,18 @@
         font-size: 28px;
     }
 
-    .input-group input {
-        font-size: 20px;
-    }
-
-    .submit-btn {
-        font-size: 24px;
-    }
-
     .allow-share p {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .allow-share .note {
+        font-size: 18px;
+    }
+
+    .submit-btn {
         font-size: 20px;
     }
+    
 
     nav {
         gap: 10px;

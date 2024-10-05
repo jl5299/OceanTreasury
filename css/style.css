@@ -240,6 +240,8 @@ h1 {
 }
 .how-it-works-right {
     width: 35%;
+    padding-right: 0; 
+    margin-top: -20px; 
 }
 .main-text {
     font-size: 42px;
@@ -256,19 +258,33 @@ h1 {
 .feature-list {
     list-style-type: none;
     padding: 0;
-    margin: -20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative
 }
+
 .feature-list li {
     font-size: 48px;
     font-weight: 300;
-    padding-top: 15px; 
-    padding-bottom: 20px; 
-    vertical-align: center;
+    padding: 15px 0 20px;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.feature-list li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
     border-bottom: 1px solid #000000;
+
 }
-.feature-list li:last-child {
-    border-bottom: none;
-}
+
 /* ADDING FAQ STYLE HERE */
 .faq-section {
     background-color: #002B43;
