@@ -9,6 +9,10 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .hero-cta { 
+        display: none; 
+    }
 }
 
 
@@ -40,6 +44,10 @@
         max-width: 1312px;
         margin-left: auto;
         margin-right: auto; 
+    }
+
+    .hero-cta { 
+        display: none; 
     }
 
     .section-number,
@@ -227,12 +235,30 @@
     nav {
         display: none; 
     }
-
+   
     .hero {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: -80px; 
+        margin-top: 0; /* Remove negative margin */
+        margin-left: auto; /* Center the hero */
+        margin-right: auto;
+        padding: 0 16px; /* Add horizontal padding */
+        box-sizing: border-box; /* Include padding in width calculation */
+        width: 100%; /* Ensure full width */
+        max-width: 100%; /* Prevent overflow */
+    }
+
+    .hero-cta {
+        display: block; /* Show the button below the subtitle */
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .hero-cta .get-access-btn {
+        display: inline-block; /* Show the button */
+        font-size: 24px; /* Slightly smaller font size */
+        padding: 10px 20px; /* Adjust padding for mobile */
     }
 
     .dashboard-preview {
@@ -342,6 +368,11 @@
         font-size: 36px;
     }
 
+    .hero-cta .get-access-btn {
+        font-size: 20px; /* Slightly smaller font size */
+        padding: 10px 20px; /* Adjust padding for mobile */
+    }
+
     .section-title {
         font-size: 48px;
     }
@@ -389,10 +420,12 @@
 
     .allow-share p {
         font-size: 36px;
+        margin-bottom: 0; 
     }
 
     .allow-share .note {
         font-size: 20px;
+        margin: 8px 0 18px;  
     }
 
     .form-container {
@@ -411,6 +444,12 @@
         font-size: 48px;
         margin-top: 10px; 
     }
+
+    .hero-cta .get-access-btn {
+        font-size: 16px; /* Slightly smaller font size */
+        padding: 5px 12px; /* Adjust padding for mobile */
+    }
+
 
     .logo img{
         width: 250px; 
