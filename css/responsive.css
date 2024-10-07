@@ -66,7 +66,7 @@
 
     .oceans-rough-box {
         max-width: 100%;
-        margin: 0 40px 80px;
+        margin: -20px 40px 80px;
         position: relative;
         z-index: 2;
     }
@@ -77,7 +77,7 @@
     }
 
     .oceans-rough-box p {
-        margin-bottom: 0;
+        margin-bottom: 20px; 
     }
 
     h1 {
@@ -95,6 +95,10 @@
         max-width: 1312px;
         margin-left: auto;
         margin-right: auto; 
+    }
+
+    .early-access-section {
+        padding-bottom: 80px;
     }
 
     .how-it-works-content {
@@ -132,6 +136,7 @@
     .faq-title,
     .faq-content {
         width: 100%;
+        padding-bottom: 40px; 
     }
 
     .vertical-line2, 
@@ -163,7 +168,7 @@
 
     .form-right {
         order: 2; 
-        margin-top: -100px; 
+        margin-top: -120px; 
         padding-top: 0; 
     }
 
@@ -237,7 +242,7 @@
     }
 
     .oceans-rough-box p {
-        margin-bottom: 10px; 
+        margin-bottom: 20px; 
     }
 
     .horizontal-line-top {
@@ -258,6 +263,10 @@
     .vertical-line2, 
     .horizontal-line-top {
         display: none;
+    }
+
+    .faq-toggle {
+        margin-left: 20px; 
     }
 
     .footer-content {
@@ -305,8 +314,6 @@
     
 }
 
-
-/* MIGHT NOT NEED THESE HERE */
 @media screen and (max-width: 768px) {
     .container {
         padding: 24px 16px;
@@ -364,8 +371,12 @@
         font-size: 24px;
     }
 
+    .faq-toggle {
+        margin-left: 15px; 
+    }
+
     .early-access-section {
-        padding: 80px 16px 100px;
+        padding: 80px 16px 80px;
     }
 
     .early-access-title {
@@ -398,6 +409,12 @@
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 48px;
+        margin-top: 10px; 
+    }
+
+    .logo img{
+        width: 250px; 
+        height: auto; 
     }
 
     .subheading {
@@ -433,6 +450,10 @@
         font-size: 20px;
     }
 
+    .early-access-section {
+        padding-bottom: 60px; 
+    }
+
     .early-access-title {
         font-size: 48px;
     }
@@ -452,18 +473,16 @@
     .submit-btn {
         font-size: 20px;
     }
-    
-
-    nav {
-        gap: 10px;
-    }
-
-    nav a {
-        font-size: 16px;
-    }
-
     .oceans-rough-box {
-        margin: 20px 0;
-        padding: 20px 0;
+        margin: -30px 5px 80px;
+        padding: 30px;
+    }
+    .footer-logo img {
+        width: 250px; 
+        height: auto; 
+    }
+
+    .contact-email {
+        font-size: 18px;
     }
 }

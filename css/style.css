@@ -47,10 +47,11 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    font-size: 18px;
-    color: #333;
 }
+
 .logo img {
+    width:383px; 
+    height:auto; 
     margin-right: 10px;
 }
 .logo span {
@@ -71,7 +72,6 @@ header {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .get-access-btn::after {
@@ -541,18 +541,17 @@ input:checked + .slider:before {
     padding-bottom: 20px; /* Added to ensure equal spacing above and below content */
   }
   
+  .footer-logo img {
+    width:383px; 
+    height:auto; 
+  }
+  
   .footer-left {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Added to vertically center the content */
   }
 
-  
-  .copyright {
-    font-size: 14px;
-    color: #666;
-  }
-  
   .footer-right {
     display: flex;
     align-items: center; /* Added to vertically center the email */
