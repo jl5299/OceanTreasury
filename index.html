@@ -1,85 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Maritime insurance claims management powered by AI">
-    <meta name="author" content="Justin Law">
-    <title>Ocean Treasury - Maritime Insurance Claims Management</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="assets/OceanTreasuryLogo.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maritime Insurance Claims Management Powered by AI">
+    <title>Ocean Treasury</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="assets/smallLogo.png"/>
     <link href="./css/style.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <link href="./css/responsive.css" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/OceanTreasuryLogoWithText.png" alt="Ocean Treasury Logo">
-        </div>
-        <nav id="main-nav">
-            <ul>
-                <li><a href="#how-it-works">How it Works</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#get-access" class="cta">Get Early Access</a></li>
-            </ul>
-        </nav>
-        <div class="burger-menu" id="burger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-    </header>
-    <main>
-        <section id="hero">
-            <h1>Maritime insurance <span class="highlight">made simple</span></h1>
-            <div class="hero-image">
-                <p>Achieve full financial confidence with automated claims management</p>
-                <div class="placeholder-image">
-                    <img src="assets/OceanTreasuryDashboardDemo.jpg" alt="Ocean Treasury demo">
-                </div>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="assets/Logo.png" alt="Ocean Treasury Logo">
+            </div>
+            <a href="#get-access" class="get-access-btn">Get Early Access</a>
+        </header>
+        
+        <div class="content-wrapper">
+            <div class="vertical-line"></div>
+            <nav>
+                <a href="#what-we-do">What We Do</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            
+            <section class="hero">
+                <h1>Maritime Insurance. <span class="blue-text">Simplified.</span></h1>
+                <p class="subheading">Turn your data into your <span class="blue-text">competitive edge.</span></p>
                 <div class="hero-cta">
-                    <a href="#get-access" class="cta-button">Get Early Access</a>
+                    <a href="#get-access" class="get-access-btn">Get Early Access</a>
+                </div>
+                <img src="assets/dashboard.png" alt="Dashboard Preview" class="dashboard-preview">
+            </section>
+            
+            <div class="bottom-line"></div>
+        </div>
+    </div>
+        <!-- ADDING SECOND SECTION BODY HERE -->
+        <a name ="what-we-do"> 
+        <div class="content-section">
+            <div class="what-we-do">
+                <div>
+                    <div class="section-number">[01]</div>
+                    <h2 class="section-title">What We Do</h2>
+                </div>
+                <div class="oceans-rough-box">
+                    <h3>Oceans Are Rough</h3>
+                    <p>The maritime industry files <span class="blue-text-oceans-rough">$20B+ USD</span> in insurance claims annually. The stakes are high, and navigating the complexities of cargo insurance can be overwhelming.</p>
+                    <p>We created Ocean Treasury to streamline and optimize your insurance claims, ensuring you <span class="blue-text-oceans-rough">recover the maximum value</span> from your policy.</p>
                 </div>
             </div>
-        </section>
-        <section id="features" class="row">
-            <div class="section-number">[01]</div>
-            <div class="section-title">
-                <h3>What we do</h3>
-            </div>
-            <div class="section-content">
-                <h4>Oceans are rough</h4>
-                <p>The maritime industry files $20B+ USD in insurance claims annually. The stakes are high, and navigating the complexities of cargo insurance can be overwhelming</p>
-                <p>We created Ocean Treasury to streamline and optimize your insurance claims, ensuring you recover the maximum value from your policy</p>
-            </div>
-        </section>
-        <section id="how-it-works" class="row">
+        </div> 
+        </a>
+        <a name="how-it-works">
+        <div class="how-it-works">
             <div class="section-number">[02]</div>
-            <div class="section-title">
-                <h3>How it Works</h3>
+            <h2 class="section-title">How It Works</h2>
+            <div class="how-it-works-content">
+                <div class="how-it-works-left">
+                    <p class="main-text">
+                        Instead of chasing down paper trails of operational emails for each voyage in your fleet, Ocean Treasury identifies <strong>when</strong> you should file a claim and <strong>submits it for you</strong>.
+                    </p>
+                    <p> 
+                        <span class="main-text">So </span>
+                        <span class="focus-text"> you </span> 
+                        <span class="main-text"> can </span> 
+                        <span class="focus-text"> focus on operating.</span>
+                    </p>
+                </div>
+                <div class="how-it-works-right">
+                    <ul class="feature-list">
+                        <li>AI Powered Automation</li>
+                        <li>Claims Transparency</li>
+                        <li>Accuracy & Consistency</li>
+                    </ul>
+                </div>
             </div>
-            <div class="section-content">
-                <h4>Insurance billing purpose-built for the maritime industry</h4>
-                <p>Our platform analyzes and streamlines maritime-specific insurance claims to maximize your coverage and provide full transparency in the insurance process</p>
-                <p>Instead of chasing down paper trails of operational emails for each voyage of your fleet, our automation ensures complete accuracy and consistency of insurance claims</p>
-            </div>
-        </section>
-        <section id="faq">
+        </div>
+        </a>
+    <!-- ADDING FAQ BODY HERE -->
+    <a name="faq">
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2 class="faq-title">FAQ</h2>
             <div class="faq-content">
-                <h2>FAQ</h2>
                 <div class="faq-item">
                     <div class="faq-question">
                         WHY PARTNER WITH US?
-                        <i class="fas fa-chevron-down"></i>
+                        <div class="faq-toggle"></div>
                     </div>
                     <div class="faq-answer">
-                        We created Ocean Treasury as a result of our experiences working in the intersection of technology and supply chain. Our backgrounds span across maritime, insurance, supply chain, and deep technology -- we've seen the impact technology can make at scale, and we are committed to taking down administrative hurdles by building better software
+                        We created Ocean Treasury as a result of our experiences working in the intersection of technology and supply chain. Our backgrounds span across maritime, insurance, supply chain, and deep technology we've seen the impact technology can make at scale, and we are committed to taking down administrative burdens by building better software.
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
                         WHO IS OCEAN TREASURY FOR?
-                        <i class="fas fa-chevron-down"></i>
+                        <div class="faq-toggle"></div>
                     </div>
                     <div class="faq-answer">
                         Ocean Treasury is purpose-built for ship owners and operators. We seek to work with teams who are tech-forward and want to be on the forefront of AI adoption in the maritime industry.
@@ -88,86 +109,87 @@
                 <div class="faq-item">
                     <div class="faq-question">
                         HOW IS MY DATA PROTECTED?
-                        <i class="fas fa-chevron-down"></i>
+                        <div class="faq-toggle"></div>
                     </div>
                     <div class="faq-answer">
-                        We use your data to enable better claims management and processing by reconciling insurance claimable expenses against your charterparties, contracts, and insurance policies.
-
-                        You retain control over all company and customer data and any confidential information. Ocean Treasury takes data security and privacy seriously. We store customer secrets such as API keys using secure methods, and are pursuing SOC2 certification.
+                        We use your data to enable better claims management and processing by reconciling insurance claimable expenses against your charter-parties, contracts, and insurance policies. You retain control over all company and customer data and any confidential information. Ocean Treasury takes data security and privacy seriously. We store customer secrets such as API keys using secure methods, and are pursuing SOC2 certification.
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
                         WHAT AI DOES OCEAN TREASURY USE?
-                        <i class="fas fa-chevron-down"></i>
+                        <div class="faq-toggle"></div>
                     </div>
                     <div class="faq-answer">
                         Ocean Treasury uses several different AI models to analyze and automate different steps of the insurance process, including large language models and browser agents. Some of these models are prompted and/or trained using our proprietary datasets which are specific to maritime insurance.
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="get-access">
-            <h2>Get Early Access</h2>
-            <p>Join our private beta program and help to shape the future of supply chain claims management.</p>
-            <form id="early-access-form" method="POST">
+        </div>
+    </section>
+    </a>
+    <script type="text/javascript" src="scripts.js"></script>
+    <!-- Body for Get Early Access Form -->
+    <a name="get-access">
+    <section class="early-access-section">
+        <div>
+            <h2 class="early-access-title">Get Early Access</h2>
+            <p class="early-access-subtitle">Join our private beta program and help to shape the future of supply chain claims management.</p>
+        </div>
+        <div class="horizontal-line-top"></div>
+        <div class="vertical-line2"></div>
+        <div class="early-access-content">
+            <div class="form-container">
                 <div class="form-left">
-                    <input type="text" name="Name" placeholder="Name" required>
-                    <input type="email" name="Email" placeholder="Email" required>
-                    <input type="tel" name="Phone Number" placeholder="Phone Number" required>
-                    <input type="text" name="Company Name" placeholder="Company Name" required>
-                    <button type="submit">Submit →</button>
-                </div>
-                <div class="form-right">
-                    <div class="consent">
-                        <span class="consent-text">Sign up for newsletter and updates?</span>
+                <form id="early-access-form" method="POST">
+                    <div class="input-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="First Name" placeholder="John" required>
                     </div>
-                    <span class="consent-note">NOTE: We never share any personal information we collect with 3rd parties</span>
-                    <label class="toggle">
-                        <input type="checkbox" name="Consent" id="consent-checkbox" checked>
-                        <span class="slider round"></span>
+                    <div class="input-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="Last Name" placeholder="Doe">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="Phone Number" placeholder="+1 (123) 456-7890">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="Email" placeholder="john@email.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="Company Name" placeholder="Company Inc.">
+                    </div>
+                    <button type="submit" id=submitBtn class="submit-btn">Submit →</button>                
+                </form>
+            </div>
+            <div class="form-right">
+                <div class="allow-share">
+                    <p>Sign up for our newsletter and stay up to date on our progress?</p>
+                    <p class="note">We never share any personal information we collect with 3rd parties.</p>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="consent-checkbox" checked>
+                        <span class="slider"></span>
                     </label>
                 </div>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <img src="assets/OceanTreasuryLogoWithText.png" alt="Ocean Treasury Logo">
-        <div class="social">
-            <a href="mailto:justin@oceantreasury.com">justin@oceantreasury.com
-            </a>
+            </div>
         </div>
-    </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const burgerMenu = document.getElementById('burger-menu');
-            const mainNav = document.getElementById('main-nav');
-
-            burgerMenu.addEventListener('click', () => {
-                mainNav.classList.toggle('active');
-            });
-
-            // Close menu when a link is clicked
-            const navLinks = document.querySelectorAll('nav ul li a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mainNav.classList.remove('active');
-                });
-            });
-
-            // FAQ accordion functionality
-            const faqQuestions = document.querySelectorAll('.faq-question');
-            faqQuestions.forEach(question => {
-                question.addEventListener('click', () => {
-                    const answer = question.nextElementSibling;
-                    const icon = question.querySelector('i');
-                    
-                    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-                    icon.classList.toggle('fa-chevron-up');
-                    icon.classList.toggle('fa-chevron-down');
-                });
-            });
-        });
-    </script>
+    </section>
+    </a>
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="footer-logo">
+              <img src="assets/Logo.png" alt="Ocean Treasury Logo">
+            </div>
+          </div>
+          <div class="footer-right">
+            <a href="mailto:contact@oceantreasury.com" class="contact-email">contact@oceantreasury.com</a>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>
+      
