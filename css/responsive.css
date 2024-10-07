@@ -33,12 +33,16 @@
         position: fixed;
     }
     .hero,
-    .dashboard-preview, 
     .what-we-do {
         width: calc(100% - 64px);
         max-width: 1312px;
         margin-left: auto;
         margin-right: auto; 
+    }
+    .dashboard-preview{
+        width: 100%;
+        height: auto;
+        overflow: hidden; 
     }
     .hero-cta { 
         display: none; 
@@ -46,9 +50,6 @@
     .section-number,
     .section-title {
         padding-left: auto;
-    }
-    .dashboard-preview {
-        height: auto;
     }
     .what-we-do {
         display: flex;
@@ -217,9 +218,10 @@
         padding: 10px 20px; /* Adjust padding for mobile */
     }
     .dashboard-preview {
-        max-width: 100%;
+        width: 130%;
         height: auto;
-        margin: 0 auto;
+        margin: 0;
+        overflow: hidden; 
     }
     .oceans-rough-box p {
         margin-bottom: 20px; 
