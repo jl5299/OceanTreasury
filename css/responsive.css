@@ -1,4 +1,5 @@
 /* Responsive styles */
+/* FULL WIDTH DESKTOP */
 @media screen and (min-width: 1441px) {
     .hero,
     .dashboard-preview,
@@ -10,6 +11,8 @@
     }
 }
 
+
+/* START STACKING - CONDENSED DESKTOP */
 @media screen and (max-width: 1440px) {
     .container {
         padding: 24px 32px;
@@ -43,43 +46,26 @@
     }
 
     .what-we-do {
-        position: relative;
-        width: 100%;
-        max-width: 1312px;
-        margin: 0 auto;
-        padding: 40px 0;
+        max-width: calc(100% - 64px); 
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 0 80px 0;
         box-sizing: border-box;
-        overflow: hidden;
-    }
-    
-    .what-we-do-content {
         position: relative;
-        z-index: 2;
-        padding: 0 64px;
+        border-top: none;
+        border-bottom: none;
+        height: auto; /* Remove fixed height */
+        min-height: 659px; /* Set minimum height to original height */
+        border-top: 1px solid black;
+        border-bottom: 1px solid black; 
     }
-    
-    .what-we-do::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 50%;
-        right: 50%;
-        bottom: 0;
-        margin-left: -50vw;
-        margin-right: -50vw;
-        background-image: url(../assets/roughocean.png);
-        background-size: cover;
-        background-position: center;
-        opacity: 1;
-        z-index: 1;
-    }
-    
 
     .oceans-rough-box {
-        max-width: 100%;
+        max-width: calc(100% - 64px);
         margin: 40px 0;
         position: relative;
-        padding: 40px;
         z-index: 2;
     }
 
@@ -163,35 +149,82 @@
         width: 100%;
     }
 
-    .form-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 40px;
-        padding-left: 0;
+    .vertical-line2 {
+        display: none; 
     }
 
-    .form-left {
-        width: calc(100% - 48px);
-        padding-left: 48px;
+    .early-access-section {
+        height: auto; 
+    }
+    
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+
+    .form-left, 
+    .form-right, 
+    .allow-share {
+        width: 100%;
+    }
+
+    .form-left { 
         order: 1;
     }
 
     .form-right {
-        width: 100%;
-        order: 2;
+        order: 2; 
+        margin-top: -100px; 
+        padding-top: 0; 
+    }
+
+    .allow-share {
+        order: 3; 
+        margin-top: 0;
+        padding: 0;  
+
     }
 
     .submit-btn {
-        order: 3;
-        margin-top: 0;
+        position: absolute; 
+        order: 4;  
+        bottom: 0;
+        left: 0;
+        margin: 0; 
     }
+
+    .form-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-right > *:not(.allow-share) {
+        order: 2;
+    }
+
+    .allow-share {
+        order: 1;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .footer-content {
+        max-width: calc(100% - 64px); /* 64px padding on each side */
+        width: auto; 
+      }
+
 
 }
 
-@media screen and (max-width: 800px) {
+/* MOBILE DESIGN STARTS HERE */
+@media screen and (max-width: 900px) {
     .get-access-btn {
         display: none;
     }
+
 
     header {
         justify-content: center;
@@ -226,7 +259,7 @@
         display: none;
     }
 
-    .vertical-line,
+    .vertical-line, 
     .vertical-line2 {
         display: none;
     }
@@ -235,6 +268,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding-bottom: 10px;
     }
 
     .footer-left {
@@ -283,9 +317,35 @@
         padding: 40px;
         z-index: 2;
     }
+
+    .form-container {
+        width: 100%;
+        margin-left: 0; 
+    }
+
+    .footer-content {
+        width: calc(100%-64px);
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .footer-left, .footer-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+    
+      .contact-email {
+        font-size: 24px; /* Slightly smaller font size for mobile */
+      }
     
 }
 
+
+/* MIGHT NOT NEED THESE HERE */
 @media screen and (max-width: 768px) {
     .container {
         padding: 24px 16px;
@@ -374,8 +434,6 @@
         padding: 40px 32px;
         box-sizing: border-box;
         position: relative;
-
-
         height: auto; /* Remove fixed height */
         min-height: 659px; /* Set minimum height to original height */
     }

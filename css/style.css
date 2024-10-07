@@ -527,9 +527,7 @@ input:checked + .slider:before {
 
 
 .footer {
-    margin-top: 120px;
-    border-top: 1px solid #000;
-    padding: 20px 0;
+    margin-top: 60px;
   }
   
   .footer-content {
@@ -537,25 +535,29 @@ input:checked + .slider:before {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 0 20px; 
+    align-items: center; /* Changed from flex-end to center */
+    border-top: 1px solid #000;
+    padding-top: 20px;
+    padding-bottom: 20px; /* Added to ensure equal spacing above and below content */
   }
   
   .footer-left {
     display: flex;
     flex-direction: column;
+    justify-content: center; /* Added to vertically center the content */
   }
 
-  .footer-right {
-    display: flex;
-    justify-content: flex-end; /* Add this line */
-    flex-grow: 1; /* Add this line */
+  
+  .copyright {
+    font-size: 14px;
+    color: #666;
   }
   
-  .footer-logo {
+  .footer-right {
     display: flex;
-    align-items: center;
-    margin-bottom: 5px;
+    align-items: center; /* Added to vertically center the email */
+    height: 100%; /* Ensure it takes full height of the footer */
+    padding-bottom: 15px; 
   }
   
   .contact-email {
@@ -563,8 +565,6 @@ input:checked + .slider:before {
     color: #000;
     text-decoration: none;
     border-bottom: 1px solid #000;
-    text-align: right; 
-    
   }
   
   .contact-email:hover {
