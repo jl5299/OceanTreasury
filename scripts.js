@@ -18,6 +18,7 @@ document.querySelectorAll('.faq-question').forEach(question => {
     });
   });
 
+  // Script to submit Early Access Form
   document.addEventListener('DOMContentLoaded', function() {
     var form = document.getElementById('early-access-form');
     var submitBtn = document.getElementById('submitBtn');

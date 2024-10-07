@@ -48,7 +48,6 @@ header {
     display: flex;
     align-items: center;
 }
-
 .logo img {
     width:383px; 
     height:auto; 
@@ -73,17 +72,6 @@ header {
     align-items: center;
     justify-content: center;
 }
-
-/*get-access-btn::after {
-    content: '→';
-    display: inline-block; 
-    line-height: 1; 
-    margin-left: 5px;
-    font-weight: 0; 
-
-}
-*/
-
 .get-access-btn:hover {
     background-color: #f5f5f5;
 }
@@ -93,7 +81,7 @@ nav {
     padding: 0 0 52px 12px;
     border-bottom: 1px solid black;
     width: fit-content;
-    height: 51px; /* Explicit height to ensure consistency */
+    height: 51px; 
     box-sizing: border-box;
 }
 nav a {
@@ -209,7 +197,6 @@ h1 {
     color: #00517D;
     font-weight: 700;
 }
-
 .what-we-do {
     height: 659px;
     border-top: 1px solid black;
@@ -266,7 +253,6 @@ h1 {
     align-items: flex-end;
     position: relative
 }
-
 .feature-list li {
     font-size: 48px;
     font-weight: 300;
@@ -276,7 +262,6 @@ h1 {
     width: 100%;
     position: relative;
 }
-
 .feature-list li:not(:last-child)::after {
     content: '';
     position: absolute;
@@ -286,7 +271,6 @@ h1 {
     border-bottom: 1px solid #000000;
 
 }
-
 /* ADDING FAQ STYLE HERE */
 .faq-section {
     background-color: #002B43;
@@ -363,9 +347,7 @@ h1 {
     max-height: 1000px;
     padding-top: 20px;
 }
-
 /* STYLE FOR THE FORM */
-
 .early-access-section {
     width: 1312px;
     height: 1025px; 
@@ -414,7 +396,6 @@ h1 {
     color: #000;
     font-weight: 500;
 }
-
 .input-group input {
     width: 100%;
     padding: 10px 0;
@@ -431,11 +412,9 @@ h1 {
     font-size: 32px;
     font-weight: 100;
 }
-
 .input-group input:focus::placeholder {
     color: transparent;
 }
-
 .submit-btn {
     padding: 10px 20px;
     font-size: 28px;
@@ -449,11 +428,9 @@ h1 {
     min-width: 120px;
     min-height: 48px;
 }
-
 .submit-btn.loading {
     color: transparent;
 }
-
 .submit-btn.loading::after {
     content: '';
     position: absolute;
@@ -465,14 +442,15 @@ h1 {
     line-height: 1;
     animation: loadingDot 1.5s infinite;
 }
-
 @keyframes loadingDot {
     0% { content: ''; }
     33% { content: '•'; }
     66% { content: '••'; }
     100% { content: '•••'; }
 }
-
+.submit-btn:hover {
+    background-color: #f5f5f5;
+}
 .allow-share {
     margin-top: -60px;
 }
@@ -549,48 +527,40 @@ input:checked + .slider:before {
     height: 1px;
     background-color: #000;
 }
-
-
 .footer {
     margin-top: 60px;
   }
-  
-  .footer-content {
+.footer-content {
     max-width: 1312px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Changed from flex-end to center */
+    align-items: center; 
     border-top: 1px solid #000;
     padding-top: 20px;
-    padding-bottom: 20px; /* Added to ensure equal spacing above and below content */
+    padding-bottom: 20px; 
   }
-  
   .footer-logo img {
     width:383px; 
     height:auto; 
   }
-  
   .footer-left {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Added to vertically center the content */
+    justify-content: center;
   }
-
   .footer-right {
     display: flex;
-    align-items: center; /* Added to vertically center the email */
-    height: 100%; /* Ensure it takes full height of the footer */
+    align-items: center; 
+    height: 100%; 
     padding-bottom: 15px; 
   }
-  
   .contact-email {
     font-size: 32px;
     color: #000;
     text-decoration: none;
     border-bottom: 1px solid #000;
   }
-  
   .contact-email:hover {
     border-bottom: none;
   }
