@@ -1,4 +1,8 @@
 /* Responsive styles */
+html, body {
+    width: 100%; 
+    overflow-x:hidden; 
+}
 /* FULL WIDTH DESKTOP */
 @media screen and (min-width: 1441px) {
     .hero,
