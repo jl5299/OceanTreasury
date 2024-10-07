@@ -34,11 +34,17 @@
     }
 
     .hero,
-    .dashboard-preview {
+    .dashboard-preview, 
+    .what-we-do {
         width: calc(100% - 64px);
         max-width: 1312px;
         margin-left: auto;
         margin-right: auto; 
+    }
+
+    .section-number,
+    .section-title {
+        padding-left: auto;
     }
 
     .dashboard-preview {
@@ -46,44 +52,23 @@
     }
 
     .what-we-do {
-        max-width: calc(100% - 64px); 
-        width: auto;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 40px 0 80px 0;
+        padding: 40px 0;
         box-sizing: border-box;
         position: relative;
-        border-top: none;
-        border-bottom: none;
-        height: auto; /* Remove fixed height */
-        min-height: 659px; /* Set minimum height to original height */
         border-top: 1px solid black;
-        border-bottom: 1px solid black; 
+        border-bottom: 1px solid black;
+        height: auto;
+        min-height: 659px;
     }
 
     .oceans-rough-box {
-        max-width: calc(100% - 64px);
-        margin: 40px 0;
+        max-width: 100%;
+        margin: 0 40px 80px;
         position: relative;
         z-index: 2;
-    }
-
-    .horizontal-line-top,
-    .horizontal-line-bottom {
-        position: absolute;
-        left: 0;
-        right: 0;
-        height: 1px;
-        background-color: #000;
-    }
-
-    .horizontal-line-top {
-        top: 0;
-    }
-
-    .horizontal-line-bottom {
-        bottom: 0;
     }
 
     .oceans-rough-box h3 {
@@ -149,7 +134,8 @@
         width: 100%;
     }
 
-    .vertical-line2 {
+    .vertical-line2, 
+    .horizontal-line-top {
         display: none; 
     }
 
@@ -225,7 +211,6 @@
         display: none;
     }
 
-
     header {
         justify-content: center;
     }
@@ -251,6 +236,10 @@
         margin: 0 auto;
     }
 
+    .oceans-rough-box p {
+        margin-bottom: 10px; 
+    }
+
     .horizontal-line-top {
         display: none; 
     }
@@ -259,8 +248,15 @@
         display: none;
     }
 
+    .section-number,
+    .section-title {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
     .vertical-line, 
-    .vertical-line2 {
+    .vertical-line2, 
+    .horizontal-line-top {
         display: none;
     }
 
@@ -281,41 +277,6 @@
 
     .contact-email {
         font-size: 24px;
-    }
-
-    .what-we-do {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 40px 32px;
-        box-sizing: border-box;
-        position: relative;
-
-
-        height: auto; /* Remove fixed height */
-        min-height: 659px; /* Set minimum height to original height */
-    }
-
-    .what-we-do::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url(../assets/roughocean.png);
-        background-size: cover;
-        background-position: center;
-        opacity: 1;
-        z-index: 1;
-    }
-
-    .oceans-rough-box {
-        max-width: 100%;
-        margin: 40px 0;
-        position: relative;
-        padding: 40px;
-        z-index: 2;
     }
 
     .form-container {
@@ -423,41 +384,13 @@
         font-size: 20px;
     }
 
+    .form-container {
+        padding-left: 0;
+    }
+
     .submit-btn {
-        font-size: 24px;
-    }
-
-    .what-we-do {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 40px 32px;
-        box-sizing: border-box;
-        position: relative;
-        height: auto; /* Remove fixed height */
-        min-height: 659px; /* Set minimum height to original height */
-    }
-
-    .what-we-do::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url(../assets/roughocean.png);
-        background-size: cover;
-        background-position: center;
-        opacity: 1;
-        z-index: 1;
-    }
-
-    .oceans-rough-box {
-        max-width: 100%;
-        margin: 40px 0;
-        position: relative;
-        padding: 40px;
-        z-index: 2;
+        margin-left: 16px; 
+        padding-left: 16px; 
     }
 
 }
