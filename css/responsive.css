@@ -296,12 +296,6 @@ html, body {
         padding: 16px;
         width: calc(100% - 32px);
     }
-    nav {
-        height: auto;
-    }
-    nav a {
-        font-size: 20px;
-    }
     h1 {
         font-size: 60px;
     }
@@ -309,7 +303,7 @@ html, body {
         font-size: 36px;
     }
     .hero-cta .get-access-btn {
-        font-size: 20px; /* Slightly smaller font size */
+        font-size: 24px; /* Slightly smaller font size */
         padding: 10px 20px; /* Adjust padding for mobile */
     }
     .section-title {
@@ -358,6 +352,7 @@ html, body {
         padding-left: 0;
     }
     .submit-btn {
+        font-size: 24px;
         margin-left: 16px; 
         padding-left: 16px; 
     }
@@ -369,8 +364,8 @@ html, body {
         margin-top: 10px; 
     }
     .hero-cta .get-access-btn {
-        font-size: 16px; /* Slightly smaller font size */
-        padding: 5px 12px; /* Adjust padding for mobile */
+        font-size: 22px; /* Slightly smaller font size */
+        padding: 7px 15px; /* Adjust padding for mobile */
     }
     .logo img{
         width: 250px; 
@@ -386,11 +381,11 @@ html, body {
         font-size: 28px;
     }
     .oceans-rough-box p {
-        font-size: 20px;
+        font-size: 22px;
     }
     .main-text,
     .focus-text {
-        font-size: 24px;
+        font-size: 26px;
     }
     .feature-list li {
         font-size: 28px;
@@ -399,7 +394,7 @@ html, body {
         font-size: 28px;
     }
     .faq-answer {
-        font-size: 20px;
+        font-size: 22px;
     }
     .early-access-section {
         padding-bottom: 60px; 
@@ -414,14 +409,14 @@ html, body {
         font-size: 28px;
     }
     .allow-share .note {
-        font-size: 18px;
-    }
-    .submit-btn {
         font-size: 20px;
     }
     .oceans-rough-box {
         margin: -30px 5px 80px;
         padding: 30px;
+    }
+    .submit-btn {
+        font-size: 22px;
     }
     .footer-logo img {
         width: 250px; 
