@@ -159,7 +159,7 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(../assets/roughOcean.png);
+    background-image: url(../assets/roughOcean.webp);
     background-size: cover;
     background-position: center;
     opacity: 1; /* Adjust this value to change the image opacity */
@@ -395,6 +395,8 @@ h1 {
     font-size: 18px;
     color: #000;
     font-weight: 500;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
 }
 .input-group input {
     width: 100%;
@@ -411,9 +413,15 @@ h1 {
     color: #999;
     font-size: 32px;
     font-weight: 100;
+    transition: opacity 0.3s ease;
 }
-.input-group input:focus::placeholder {
-    color: transparent;
+.input-group input:focus::placeholder,
+.input-group input:not(:placeholder-shown)::placeholder {
+    opacity: 0;
+}
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    opacity: 1;
 }
 .submit-btn {
     padding: 10px 20px;
