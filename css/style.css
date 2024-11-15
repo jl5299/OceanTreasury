@@ -113,7 +113,7 @@ h1 {
     margin-bottom: 0; 
 }
 .dashboard-preview {
-    max-width: 1312px;
+    max-width: min(70%, 1312px);
     margin-top: 0; 
 }
 .bottom-line {
