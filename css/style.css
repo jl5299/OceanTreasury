@@ -95,7 +95,7 @@ nav a:hover {
 }
 .hero {
     text-align: center;
-    padding-top: 60px;
+    padding-top: 20px;
 }
 h1 {
     font-size: 110px;
@@ -113,7 +113,7 @@ h1 {
     margin-bottom: 0; 
 }
 .dashboard-preview {
-    max-width: min(70%, 1312px);
+    max-width: min(50%, 1000px);
     margin-top: 0; 
 }
 .bottom-line {
