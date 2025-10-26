@@ -145,9 +145,9 @@ const Dashboard: React.FC = () => {
         <h1 className="dashboard-title">Parcel Optimizer</h1>
       </div>
 
-      {/* Voyage DB */}
+      {/* Port Discharge Plan */}
       <div className="dashboard-card">
-        <h2 className="card-title">Voyage DB</h2>
+        <h2 className="card-title">Port Discharge Plan</h2>
         <ExcelCalculator />
       </div>
 
